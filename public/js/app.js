@@ -18,6 +18,13 @@ const commands = [
     category: "general",
     run: clearCommand,
   },
+  {
+    command: "author",
+    description: "Show author information",
+    aliases: ["a"],
+    category: "general",
+    run: authorCommand,
+  },
 
   {
     command: "time",
@@ -218,4 +225,10 @@ function timeLeftCommand() {
   printLine(
     "Time left until the end of working day: " + hours + "h " + minutes + "m"
   );
+}
+
+function authorCommand() {
+  printDirtyLine("----------------------------------------");
+  printDirtyLine("Author: <span class='author'>Paul van der Lei</span>");
+  printDirtyLine("----------------------------------------");
 }

@@ -16,3 +16,17 @@ body {
 .loading {
   color: #0ebb0b;
 }
+.author {
+  background: linear-gradient(
+    90deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #9400d3
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
