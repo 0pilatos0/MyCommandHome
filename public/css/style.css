@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(17, 17, 17);
+  color: rgb(201, 201, 201);
+  font-family: "Roboto", sans-serif;
+}
+
+.prefix {
+  color: #188317;
+}
+.category {
+  color: #bf4d57;
+}
+.description {
+  color: rgb(126, 126, 126);
+}
+.loading {
+  color: #0ebb0b;
+}
