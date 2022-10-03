@@ -231,3 +231,25 @@ function authorCommand() {
   printDirtyLine("Author: <span class='author'>Paul van der Lei</span>");
   printDirtyLine("----------------------------------------");
 }
+
+setInterval(() => {
+  const title = document.querySelector("title");
+  title.innerHTML = "HOME | " + new Date().toLocaleTimeString();
+
+  const tl = document.querySelector("#tl");
+  const now = new Date();
+  const end = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate(),
+    17,
+    0,
+    0
+  );
+  const diff = end - now;
+  const hours = Math.floor(diff / 1000 / 60 / 60);
+  const minutes = Math.floor((diff / 1000 / 60 / 60 - hours) * 60);
+  const seconds = Math.floor((diff / 1000 / 60 - hours * 60 - minutes) * 60);
+
+  tl.innerHTML = hours + ":" + minutes + ":" + seconds;
+}, 1000);

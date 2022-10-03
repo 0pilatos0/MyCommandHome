@@ -30,3 +30,10 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+#tl {
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+  font-size: 40px;
+}
