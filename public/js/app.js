@@ -3,8 +3,7 @@ const previous = document.querySelector("#previous");
 
 const prefix = "<span class='prefix'>root@main-laptop:~$</span> ";
 
-const commands = [
-  {
+const commands = [{
     command: "help",
     description: "List all available commands",
     aliases: ["h"],
@@ -65,14 +64,14 @@ const commands = [
   },
   {
     command: "jira",
-    description: "Redirects to wicsnl.atlassian.net [NOT IMPLEMENTED]",
+    description: "Redirects to wicsnl.atlassian.net",
     aliases: ["j"],
     category: "redirects",
     run: jiraCommand,
   },
   {
     command: "bitbucket",
-    description: "Redirects to bitbucket.org/wicsnl [NOT IMPLEMENTED]",
+    description: "Redirects to bitbucket.org/wicsnl",
     aliases: ["bb"],
     category: "redirects",
     run: bitbucketCommand,
@@ -193,12 +192,12 @@ function nextgenDevCommand() {
 
 function jiraCommand() {
   printLine("Redirected to https://wicsnl.atlassian.net/");
-  window.open("https://wicsnl.atlassian.net/", "_blank");
+  window.open("https://wics.atlassian.net/jira/your-work", "_blank");
 }
 
 function bitbucketCommand() {
   printLine("Redirected to https://bitbucket.org/wicsnl/");
-  window.open("https://bitbucket.org/wicsnl/", "_blank");
+  window.open("https://bitbucket.org/dashboard/overview", "_blank");
 }
 
 function timeCommand() {
